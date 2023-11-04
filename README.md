@@ -21,3 +21,29 @@ List<Integer> newArray = new ArrayList<>(Arrays.asList(0, 0));
     }
 
 }
+
+
+
+https://hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+public static void plusMinus(List<Integer> arr) {
+    // Initialize counters
+    double positiveCount = 0;
+    double negativeCount = 0;
+    double zeroCount = 0;
+
+    // Count positive, negative, and zero numbers
+    for (int num : arr) {
+        if (num > 0) {
+            positiveCount++;
+        } else if (num < 0) {
+            negativeCount++;
+        } else {
+            zeroCount++;
+        }
+    }
+    
+    // Calculate and print the ratios
+    System.out.println(String.format("%.6f", positiveCount / arr.size()));
+    System.out.println(String.format("%.6f", negativeCount / arr.size()));
+    System.out.println(String.format("%.6f", zeroCount / arr.size()));
+}
