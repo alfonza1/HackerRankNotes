@@ -1,7 +1,6 @@
 # HackerRankNotes
 https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true
 
-
      public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) { 
  
      List<Integer> newArray = new ArrayList<>(Arrays.asList(0, 0));
@@ -18,8 +17,6 @@ https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=
         
         }
       
-
-
 
 https://hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
     
@@ -44,4 +41,28 @@ https://hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
     System.out.println(String.format("%.6f", positiveCount / arr.size()));
     System.out.println(String.format("%.6f", negativeCount / arr.size()));
     System.out.println(String.format("%.6f", zeroCount / arr.size()));
-}
+     }
+
+
+https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+   
+     public static void staircase(int n) {
+    for (int i = 1; i <= n; i++) {  // Iterate over row numbers
+        for (int j = 0; j < n - i; j++) {  // Print spaces for the current row
+            System.out.print(" ");
+        }
+        for (int j = 0; j < i; j++) {  // Print '#' characters for the current row
+            System.out.print("#");
+        }
+        
+        System.out.println();  // Newline after each row
+    }
+     }
+
+
+
+
+
+
+
+     
