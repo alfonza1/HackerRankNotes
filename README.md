@@ -58,6 +58,27 @@ https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
         System.out.println();  // Newline after each row
     }
      }
+     
+
+https://www.hackerrank.com/challenges/array-left-rotation/problem?isFullScreen=true
+          
+     public static List<Integer> rotateLeft(int d, List<Integer> arr) {
+        
+        if(d > 0){
+            for(int i = 0;i < d;i++){
+               
+                int front = arr.get(0);
+                     
+                for(int j =1;j < arr.size();j++ ){
+                    
+                    arr.set(j - 1,arr.get(j));
+                }
+                          arr.set(arr.size() - 1, front);
+              }
+        }
+                      return arr;
+
+    }
 
 
 
